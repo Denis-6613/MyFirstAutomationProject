@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class NewTours09052019 {
 	
+	/*
 	private static String generateRandomString(int length) {
 
 		final String lowerCase = "abcdefghijklmnopqrstuvwxyz";// created by method "generateASCIIString"
@@ -29,8 +30,8 @@ public class NewTours09052019 {
 		}
 		return str;
 	}
-
-	private static String generateRandomEmail(int length) {
+*/
+/*	private static String generateRandomEmail(int length) {
 
 		final String[] domainArr = { "aol.com", "att.net", "bellsouth.net", "bigpond.com", "charter.net", 
 				"comcast.net", "cox.net", "facebook.com", "gmail.com", "gmx.de", "hotmail.com", 
@@ -42,6 +43,7 @@ public class NewTours09052019 {
 		email += "@" + domainArr[(int) (domainArr.length * Math.random())];
 		return email;
 	}
+	*/
 	private static String genNormalEmail(String fName, String lName) {
 		StringBuilder stringBuilder=new StringBuilder();
 		stringBuilder.append(fName).append('.').append(lName).append("@gmail.com");
@@ -159,7 +161,7 @@ public class NewTours09052019 {
 		
 		String actualConfirmationText2=driver.findElement(By.xpath("(//b)[2]")).getText();
 		String expectedConfirmationText2="Note: Your user name is "+username+".";
-		if (actualConfirmationText.equals(expectedConfirmationText)) {
+		if (actualConfirmationText2.equals(expectedConfirmationText2)) {
 			System.out.println("Confirmation 2 - all is fine");
 		}else {
 			System.out.println("Something went wrong... (Conf 2)");

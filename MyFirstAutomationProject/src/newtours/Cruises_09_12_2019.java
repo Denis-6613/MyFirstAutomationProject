@@ -1,17 +1,16 @@
 package newtours;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static driver.Driver.getDriver;
+//import static driver.Driver.getDriver;
 
 public class Cruises_09_12_2019 {
 
 	public static void main(String[] args) {
-//		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
-//		ChromeDriver driver = new ChromeDriver();
-		WebDriver driver =  getDriver("chrome");
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+//		WebDriver driver =  getDriver("chrome");
 		driver.get("http://newtours.demoaut.com/");
 		
 //		driver.findElement(By.linkText("Cruises")).click();
